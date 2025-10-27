@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.egg
+
+# Model Weights and Data
+weights/*.pth
+weights/*.pkl
+weights/*.pt
+*.pth
+*.pkl
+*.pt
+dataset/images/*
+dataset/masks/*
+dataset/*
+!dataset/.gitkeep
+"Dataset 1"/
+"Dataset 2"/
+
+# U-2-Net Repository (cloned)
+U-2-Net/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker
+.env
+
+# Testing
+test_dataset/
+*_test_results/
+*.png
+*.jpg
+*.jpeg
+!U-2-Net/test_data/**/*.jpg
+!U-2-Net/test_data/**/*.png
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# Sensitive data
+.env
+secrets.json
+config.json

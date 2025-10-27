@@ -1,0 +1,12 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+.env
+.dataset
+.DS_Store
+notebooks
+colab_u2net_clothing_training.ipynb
+README_assets

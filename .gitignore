@@ -15,19 +15,20 @@ ENV/
 env/
 *.egg
 
-# Model Weights and Data
+# Model Weights (but keep data)
 weights/*.pth
 weights/*.pkl
 weights/*.pt
 *.pth
 *.pkl
 *.pt
-dataset/images/*
-dataset/masks/*
-dataset/*
-!dataset/.gitkeep
-"Dataset 1"/
-"Dataset 2"/
+
+# Keep datasets tracked
+!dataset/
+!dataset/images/
+!dataset/masks/
+!"Dataset 1"/
+!"Dataset 2(removed)"/
 
 # U-2-Net Repository (cloned)
 U-2-Net/
@@ -54,14 +55,9 @@ logs/
 # Docker
 .env
 
-# Testing
+# Testing (keep test results but ignore test_dataset generation)
 test_dataset/
 *_test_results/
-*.png
-*.jpg
-*.jpeg
-!U-2-Net/test_data/**/*.jpg
-!U-2-Net/test_data/**/*.png
 
 # Temporary files
 *.tmp
